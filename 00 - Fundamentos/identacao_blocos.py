@@ -24,7 +24,7 @@ def depositar(valor):
     print("Obrigado por ser nosso cliente, tenha um bom dia!")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # Bloco de execução principal
     # Testando a função de saque
     saldo = 500  # Definindo um saldo inicial
     sacar(100)

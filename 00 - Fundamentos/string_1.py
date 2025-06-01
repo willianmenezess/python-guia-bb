@@ -14,6 +14,8 @@ print(texto.lstrip() + ".")
 menu = "Python"
 
 print("####" + menu + "####")
-print(menu.center(14))
-print(menu.center(14, "#"))
-print("-".join(menu))
+print(menu.center(14)) # Centra o texto em 14 caracteres
+print(menu.center(14, "#")) # Centra o texto em 14 caracteres, preenchendo com #
+print("-".join(menu)) # Junta os caracteres com -
+print(menu.replace("y", "Y")) # Substitui o y por Y
+
