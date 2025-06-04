@@ -1,3 +1,5 @@
 linguagens = ["python", "js", "c", "java", "csharp"]
 
-print(len(linguagens))  # 5
+
+if __name__ == "__main__":
+    print(len(linguagens))  # 5

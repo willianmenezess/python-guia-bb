@@ -5,5 +5,6 @@ frutas = (
     "pera",
 )
 
-print(frutas[-1])  # pera
-print(frutas[-3])  # laranja
+if __name__ == "__main__": # Bloco de execução principal, escolho o que executar e sua ordem
+    print(frutas[-1])  # pera
+    print(frutas[-3])  # laranja

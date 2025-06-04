@@ -1,3 +1,5 @@
+# count é um método que conta quantas vezes um elemento aparece na tupla.
+
 cores = (
     "vermelho",
     "azul",

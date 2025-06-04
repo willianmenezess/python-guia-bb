@@ -1,5 +1,5 @@
-# Obs: global saldo fora das funções não tem efeito. Em Python, a declaração global deve estar 
-# dentro da função onde você quer usar a variável global.
+# Obs: Uma variável global deve estar fora da função, porém se você quer 
+# modificar uma variável global dentro de uma função, você deve declarar a variável como "global" dentro da função.
 
 def sacar(valor): # função para sacar dinheiro
     global saldo  # Usando a variável global saldo
