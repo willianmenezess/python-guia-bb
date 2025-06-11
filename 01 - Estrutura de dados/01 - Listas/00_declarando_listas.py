@@ -4,6 +4,9 @@
 # será alterada. Se você adicionar novos itens a uma lista, os novos itens serão colocados 
 # no final da lista.
 
+# A lista é mutável, o que significa que podemos alterar, adicionar e remover itens em uma lista após 
+# ela ter sido criada. Como as listas são indexadas, as listas podem ter itens com o mesmo valor
+
 frutas = ["laranja", "maca", "uva"]
 print(frutas)
 

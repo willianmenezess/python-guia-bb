@@ -1,3 +1,5 @@
+# Adiciona elementos ao final da lista
+
 lista = []
 
 lista.append(1)
