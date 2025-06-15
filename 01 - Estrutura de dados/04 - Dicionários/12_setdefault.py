@@ -1,3 +1,5 @@
+# setdefault() - Método para definir um valor padrão se a chave não existir
+
 contato = {"nome": "Guilherme", "telefone": "3333-2221"}
 
 contato.setdefault("nome", "Giovanna")  # "Guilherme"

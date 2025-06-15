@@ -1,3 +1,6 @@
+# update() - Atualiza o par de chave-valor de um dicionário. Caso não exista, adiciona 
+# um novo par chave-valor.
+
 contatos = {"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}}
 
 contatos.update({"guilherme@gmail.com": {"nome": "Gui"}})
