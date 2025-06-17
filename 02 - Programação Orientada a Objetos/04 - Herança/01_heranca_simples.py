@@ -19,19 +19,20 @@ class Carro(Veiculo):
     pass
 
 
-class Caminhao(Veiculo):
+class Caminhao(Veiculo): # Python nao usa a palavra-chave "extends" para herança
     def __init__(self, cor, placa, numero_rodas, carregado):
-        super().__init__(cor, placa, numero_rodas)
+        super().__init__(cor, placa, numero_rodas) # O super() chama o construtor da classe pai
         self.carregado = carregado
 
     def esta_carregado(self):
-        print(f"{'Sim' if self.carregado else 'Não'} estou carregado")
+        return f"{'Sim' if self.carregado else 'Não'} estou carregado"
 
+if __name__ == "__main__":
+    moto = Motocicleta("preta", "abc-1234", 2)
+    carro = Carro("branco", "xde-0098", 4)
+    caminhao = Caminhao("roxo", "gfd-8712", 8, True)
 
-moto = Motocicleta("preta", "abc-1234", 2)
-carro = Carro("branco", "xde-0098", 4)
-caminhao = Caminhao("roxo", "gfd-8712", 8, True)
-
-print(moto)
-print(carro)
-print(caminhao)
+    print(moto)
+    print(carro)
+    print(caminhao)
+    print(caminhao.esta_carregado())
