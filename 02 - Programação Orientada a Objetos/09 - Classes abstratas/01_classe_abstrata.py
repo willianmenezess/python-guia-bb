@@ -1,7 +1,11 @@
+# Classe Abstrata: uma classe que não pode ser instanciada diretamente.
+# Ela serve como um modelo para outras classes, definindo métodos e propriedades que devem ser implementadas pelas subclasses.
+# Classes Abstratas são usadas para definir uma interface comum para um grupo de classes relacionadas.
+
 from abc import ABC, abstractmethod, abstractproperty
 
 
-class ControleRemoto(ABC):
+class ControleRemoto(ABC): # ABC é a classe base abstrata
     @abstractmethod
     def ligar(self):
         pass
@@ -10,8 +14,8 @@ class ControleRemoto(ABC):
     def desligar(self):
         pass
 
-    @property
-    @abstractproperty
+    @property # Decorator para definir uma propriedade abstrata
+    @abstractproperty # Caiu em desuso, use @property e @abstractmethod
     def marca(self):
         pass
 
@@ -43,14 +47,13 @@ class ControleArCondicionado(ControleRemoto):
     def marca(self):
         return "LG"
 
+if __name__ == "__main__":
+    controle = ControleTV()
+    controle.ligar()
+    controle.desligar()
+    print(controle.marca)
 
-controle = ControleTV()
-controle.ligar()
-controle.desligar()
-print(controle.marca)
-
-
-controle = ControleArCondicionado()
-controle.ligar()
-controle.desligar()
-print(controle.marca)
+    controle = ControleArCondicionado()
+    controle.ligar()
+    controle.desligar()
+    print(controle.marca)

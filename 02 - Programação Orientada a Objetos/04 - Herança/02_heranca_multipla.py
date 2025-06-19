@@ -7,13 +7,13 @@ class Animal:
 
 
 class Mamifero(Animal):
-    def __init__(self, cor_pelo, **kw):
+    def __init__(self, cor_pelo, **kw): # **kw permite passar outros parâmetros (de animal)
         self.cor_pelo = cor_pelo
         super().__init__(**kw)
 
 
 class Ave(Animal):
-    def __init__(self, cor_bico, **kw):
+    def __init__(self, cor_bico, **kw): # **kw permite passar outros parâmetros (de animal)
         self.cor_bico = cor_bico
         super().__init__(**kw)
 

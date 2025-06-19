@@ -1,3 +1,10 @@
+# Herança é um conceito fundamental da Programação Orientada a Objetos (POO) que permite que uma classe herde atributos e métodos de outra classe.
+# Isso promove a reutilização de código e a criação de hierarquias de classes.
+# Em Python, a herança é implementada através da definição de uma classe filha que estende uma classe pai.
+# A classe filha herda todos os atributos e métodos da classe pai,
+# e pode adicionar novos atributos e métodos ou sobrescrever os existentes.
+# Herança simples é quando uma classe herda de apenas uma classe pai.
+
 class Veiculo:
     def __init__(self, cor, placa, numero_rodas):
         self.cor = cor

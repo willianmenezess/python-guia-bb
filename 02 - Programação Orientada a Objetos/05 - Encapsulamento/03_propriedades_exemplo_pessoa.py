@@ -3,11 +3,11 @@ class Pessoa:
         self.nome = nome
         self._ano_nascimento = ano_nascimento
 
-    @property
+    @property # Decorator para definir uma propriedade. É uma forma de encapsular o acesso ao atributo.
     def idade(self):
-        _ano_atual = 2022
+        _ano_atual = 2025
         return _ano_atual - self._ano_nascimento
 
-
-pessoa = Pessoa("Guilherme", 1994)
-print(f"Nome: {pessoa.nome} \tIdade: {pessoa.idade}")
+if __name__ == "__main__":
+    pessoa = Pessoa("Guilherme", 1994)
+    print(f"Nome: {pessoa.nome} \tIdade: {pessoa.idade}")
