@@ -7,7 +7,7 @@ print(nome.title())
 texto = "  Olá mundo!    "
 
 print(texto + ".")
-print(texto.strip() + ".")
+print(texto.strip() + ".") #remove espaços (ou carectere dentro do parêntese) no início e no final da string
 print(texto.rstrip() + ".")
 print(texto.lstrip() + ".")
 
