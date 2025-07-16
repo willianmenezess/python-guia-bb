@@ -30,7 +30,7 @@ EXEMPLO BÁSICO: extraindo texto de um PDF
 from pdfminer.high_level import extract_text
 
 # Extrai texto de um PDF inteiro
-texto = extract_text("documento_exemplo.pdf")
+texto = extract_text("documento_exemplo.pdf") # nao utilizou o with open pq extract_text já abre o arquivo internamente
 print(texto)
 
 """
@@ -39,12 +39,12 @@ EXEMPLO COM VÁRIAS PÁGINAS E CONFIGURAÇÕES
 -----------------------------------------------
 """
 
-from pdfminer.high_level import extract_text_to_fp
-from io import StringIO
+from pdfminer.high_level import extract_text_to_fp # Usado para extrair texto para um arquivo ou objeto em memória
+from io import StringIO # Usado para capturar a saída e salvar em memória
 
 output = StringIO()
 
-with open("documento_exemplo.pdf", "rb") as pdf_file:
+with open("documento_exemplo.pdf", "rb") as pdf_file: # Abre o PDF em modo binário
     extract_text_to_fp(pdf_file, output)
 
 texto_extraido = output.getvalue()
