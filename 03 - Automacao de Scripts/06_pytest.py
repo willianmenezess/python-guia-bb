@@ -48,6 +48,8 @@ def test_soma_com_negativos():
 -----------------------------------------------
 USANDO FIXTURES (recursos reutilizáveis):
 -----------------------------------------------
+obs: Fixtures são funções que podem fornecer dados ou configurações para os testes, como exemplo
+abaixo, onde criamos uma fixture que retorna um dicionário de dados de teste.
 """
 
 import pytest
