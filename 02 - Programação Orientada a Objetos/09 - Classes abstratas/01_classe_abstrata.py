@@ -5,7 +5,7 @@
 from abc import ABC, abstractmethod, abstractproperty
 
 
-class ControleRemoto(ABC): # ABC é a classe base abstrata
+class ControleRemoto(ABC): # ABC é a classe base abstrata (= interface de algumas outras linguagens)
     @abstractmethod
     def ligar(self):
         pass
